@@ -1,0 +1,10 @@
+mkdir .config/bspwm
+mkdir .config/sxhkd
+
+# cp /etc/X11/xinit/xinitrc ~/.xinitrc
+## enter these lines in last of the file
+
+setxkbmap us &
+xsetroot -cursor_name left_ptr
+picom -f &
+exec bspwm
