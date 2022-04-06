@@ -1,0 +1,31 @@
+#!/bin/bash
+
+
+
+toilet -f term -F border --gay "Please enter your link"
+read link
+toilet -f term -F border --gay "what kind of quality you want"
+echo "
+a) Best Video                       b)Best Audio
+c) Both
+"
+read option
+
+
+case $option in
+  a)
+    youtube-dl -f best -o "$HOME/Videos/%(title)s.%(ext)s" $link
+    toilet -f term -F border --gay "Please Check Your Video folder"
+    ;;
+  b)
+    youtube-dl -f bestaudio -o "$HOME/Audio/%(title)s.%(ext)s" $link
+    toilet -f term -F border --gay "Please Check Your Audio Folder"
+    ;;
+  c)
+    youtube-dl -f bestaudio+bestvideo -o "$HOME/Videos/%(title)s.%(ext)s" $link
+    toilet -f term -F border --gay "Please Check Your Video Folder"
+    ;;
+  *)
+    toilet -f term -F border --gay "You pressed Invalid Option"
+    ;;
+esac
