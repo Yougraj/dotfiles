@@ -12,6 +12,9 @@ exec bspwm
 ## nvim
 https://github.com/jdhao/nvim-config
 
+## for wifi
+sudo systemctl enable NetworkManager
+
 ## requirements:
 sudo snap install pylsp
 yay -S npm nodejs vim-language-server
