@@ -15,9 +15,10 @@ https://github.com/jdhao/nvim-config
 ## for wifi
 sudo systemctl enable NetworkManager
 
+
 ## requirements:
 sudo snap install pylsp
-yay -S npm nodejs vim-language-server
+yay -S npm nodejs vim-language-server betterlockscreen
 
 
 sudo _JAVA_AWT_WM_NONREPARENTING=1 android-studio
