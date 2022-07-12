@@ -13,6 +13,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 bspc monitor -d 1 2 3 4 5
+# xidlehook --not-when-fullscreen --timer 600 'betterlockscreen -l' '' &
 
 ########## Window Settings ##############
 bspc config border_width         2
@@ -27,19 +28,21 @@ bspc config focused_border_color "#2E3440"
 bspc config normal_border_color "#2E3440"
 
 ######### Program settings ################
-bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Gimp desktop='^4' state=floating follow=on
 bspc rule -a TelegramDesktop desktop='^4'
-bspc rule -a Firefox desktop='^2'
+bspc rule -a Windscribe2 state=floating
+bspc rule -a Spotify desktop='^5'
 
 ######### Other Settings ################
 xsetroot -cursor_name left_ptr &
 xbacklight -set 30
 
 ######## MY picom :) ###################
-picom  &
+picom  -f &
 
 ######## THe real beauty behind rice ####
 nitrogen --restore &
 
 ######### My Bar ###############
-polybar main 
+polybar main
+
