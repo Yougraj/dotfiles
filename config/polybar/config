@@ -70,7 +70,7 @@ font-3 = JetBrainsMono Nerd Font:pixelsize=31;7
 
 modules-left = menu bspwm xwindow
 modules-center =
-modules-right = temperature mem battery wlan pulseaudio date powermenu
+modules-right = mem battery pulseaudio date powermenu
 
 wm-restack = bspwm
 ;wm-restack = i3
@@ -191,10 +191,10 @@ label-urgent-padding = 2
 [module/menu]
 type = custom/text
 ;content = レックス
-content = S U M O N
+content = SUMON
 content-background = #81A1C1
 content-foreground = #4C566A
-click-left = dmenu_run -l 17 -p RUN
+;click-left = dmenu_run -l 17 -p RUN
 ;content-underline = #4C566A
 content-padding= 1
 
@@ -203,6 +203,13 @@ type = custom/text
 content = 󰐥
 click-left = ~/.config/polybar/scripts/dmenu.sh &
 ;content-background = #B48EAD
+content-foreground = #B48EAD
+content-padding = 1
+
+[module/wlan1]
+type = custom/text
+content = 󰤨 
+click-left = ~/.local/bin/wifi-dmenu
 content-foreground = #B48EAD
 content-padding = 1
 
@@ -229,7 +236,7 @@ format-margin =1
 
 [module/wlan]
 type = internal/network
-interface = wlp2s0
+interface = wlp020f3
 interval = 3.0
 format-connected = <ramp-signal> <label-connected>
 ;format-connected-underline = #a3be8c
@@ -273,6 +280,11 @@ label-volume-padding = 1
 label-muted = muted
 label-muted-foreground = #4B4F66
 format-margin = 1
+
+[module/brightness]
+
+
+
 [module/alsa]
 type = internal/alsa
 
@@ -350,7 +362,7 @@ screenchange-reload = true
 ;pseudo-transparency = false
 
 [global/wm]
-margin-top = 5
-margin-bottom = 5
+margin-top = 3
+margin-bottom = 3
 
 ; vim:ft=dosini

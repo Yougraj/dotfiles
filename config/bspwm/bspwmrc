@@ -13,7 +13,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 bspc monitor -d 1 2 3 4 5
-# xidlehook --not-when-fullscreen --timer 600 'betterlockscreen -l' '' &
+xidlehook --not-when-fullscreen --timer 600 'betterlockscreen -l' '' &
 
 ########## Window Settings ##############
 bspc config border_width         2

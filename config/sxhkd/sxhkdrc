@@ -1,15 +1,24 @@
 #
 # wm independent hotkeys
 #
-
+super + ctrl + k
+    komorebi
 # wifi control
 super + w
-	wifi
+	wifimenu
 
 
 # terminal emulator
 super + Return
-	alacritty 
+    alacritty 
+
+# power menu
+super + x
+    powermenu
+
+# kitty
+super + k
+    kitty
 
 # Closing the current program
 super + q
@@ -21,11 +30,11 @@ XF86AudioMute
 
 #volume up
 XF86AudioRaiseVolume
-    amixer -q sset Master 3%+
+    changevolume up
 
 # volume dowm
 XF86AudioLowerVolume
-    amixer -q sset Master 3%-
+    changevolume down
 
 # brightness up
 XF86AudioPrev
@@ -35,7 +44,8 @@ XF86AudioNext
     changebrightness up
 
 
-
+super + p
+    firefox --private-window
 
 # program launcher
 super + space
@@ -46,7 +56,7 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 super + r
-    rofi -modi drun -show drun
+    rofi -show drun
 # bspwm hotkeys
 #
 
@@ -71,6 +81,8 @@ super + g
 	bspc node -s biggest.window
 
 #
+super + c
+    code
 # state/flags
 #
 
@@ -82,7 +94,9 @@ super + {t,shift + t,s,f}
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
-#
+# filemanager
+super + n
+    nautilus
 # focus/swap
 #
 
@@ -102,6 +116,17 @@ super + {_,shift + }c
 super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
+super + shift + b
+    brave
+
+super + u
+    unityhub
+
+super + shift + s
+    st
+
+super + ctrl + b
+    $HOME/Downloads/blender-3.0.0-linux-x64/blender
 # focus the last node/desktop
 super + {grave,Tab}
 	bspc {node,desktop} -f last
@@ -136,7 +161,6 @@ super + ctrl + space
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
-#
 # move/resize
 #
 
