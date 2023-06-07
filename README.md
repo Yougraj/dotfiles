@@ -33,6 +33,7 @@ yay -S npm nodejs vim-language-server betterlockscreen
 ```
 <details>
 <summary><h4>Android-studio</h4></summary>
+
 ## To run android-studio smothly
 ```
 sudo _JAVA_AWT_WM_NONREPARENTING=1 android-studio
