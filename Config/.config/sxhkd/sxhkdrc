@@ -35,13 +35,12 @@ XF86AudioRaiseVolume
 # volume dowm
 XF86AudioLowerVolume
     changevolume down
-
 # brightness up
-XF86AudioPrev
-    changebrightness down
-
-XF86AudioNext
+XF86MonBrightnessUp
     changebrightness up
+
+XF86MonBrightnessDown
+    changebrightness down
 
 
 super + p
