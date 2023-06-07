@@ -27,6 +27,31 @@ sudo snap install pylsp
 yay -S npm nodejs vim-language-server betterlockscreen
 ```
 <details>
+<summary><h4>Requirements</h4></summary>
+xorg 
+xorg-xinit 
+bspwm-rounded-corners 
+networkmanager 
+iw 
+wpa_supplicant 
+dialog 
+sxhkd 
+tint2 
+polybar-git 
+alacritty\
+brillo 
+xwallpaper 
+maim 
+imagemagick 
+dmenu 
+arandr 
+picom-git 
+cava 
+kitty 
+ranger
+</details>
+
+<details>
 <summary><h4>Android-studio</h4></summary>
 
 ## To run android-studio smothly
