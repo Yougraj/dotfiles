@@ -26,7 +26,7 @@ https://github.com/jdhao/nvim-config
 sudo systemctl enable NetworkManager
 ````
 
-## requirements:
+## requirements for nivm:
 ```
 sudo snap install pylsp
 yay -S npm nodejs vim-language-server betterlockscreen
