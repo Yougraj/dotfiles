@@ -3,7 +3,7 @@
 
 ./install_pkg.sh
 ./restore_config.sh
-
+./restore_bs.sh
 
 
 
