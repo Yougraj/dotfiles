@@ -30,6 +30,17 @@ fi
 sleep 2 &&
 
 
+cp /etc/X11/xinit/xinitrc $HOME/.xinitrc
+echo "setxkbmap us &" >> $HOME/.xinitrc
+echo "xsetroot -cursor_name left_ptr" >> $HOME/.xinitrc
+echo "picom -f &" >> $HOME/.xinitrc
+echo "exec bspwm" >> $HOME/.xinitrc
+
+
+
+
+
+
 cp ../Config/.config/* $HOME/.config/ 
 cp ../Config/.local/bin/* $HOME/.local/bin/ 
 cp ../Config/.fonts/* $HOME/.fonts

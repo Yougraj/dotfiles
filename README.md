@@ -3,19 +3,15 @@ bspwm
 
 
 
+
+## Install script
 ```
-mkdir .config/bspwm
-mkdir .config/sxhkd
-cp /etc/X11/xinit/xinitrc ~/.xinitrc
+git clone https://github.com/Yougraj/dotfiles
+cd dotfiles
+cd Script
+./install.sh
 ```
 
-## enter these lines in last of the file
-```
-setxkbmap us &
-xsetroot -cursor_name left_ptr
-picom -f &
-exec bspwm
-```
 ## nvim
 ```
 https://github.com/jdhao/nvim-config
