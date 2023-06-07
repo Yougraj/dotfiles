@@ -44,4 +44,5 @@ echo "exec bspwm" >> $HOME/.xinitrc
 cp -rf ../Config/.config/* $HOME/.config/ 
 cp -rf ../Config/.local/bin/* $HOME/.local/bin/ 
 cp -rf ../Config/.fonts/* $HOME/.fonts
-#cp -rf ../Config/.zshrc $HOME/
+cp ../Config/.zshrc $HOME/
+cp ../Config/.p10k.zsh $HOME/ 
