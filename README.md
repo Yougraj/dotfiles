@@ -4,7 +4,7 @@
 
 
 ## Install script
-```
+```bash
 git clone https://github.com/Yougraj/dotfiles
 cd dotfiles
 cd Script
@@ -12,43 +12,25 @@ cd Script
 ```
 
 ## nvim
-```
+```bash
 https://github.com/jdhao/nvim-config
 ```
 
 ## for wifi
-```
+```bash
 sudo systemctl enable NetworkManager
 ````
 
 ## requirements for nivm:
-```
+```bash
 sudo snap install pylsp
 yay -S npm nodejs vim-language-server betterlockscreen
 ```
 <details>
 <summary><h4>Requirements</h4></summary>
-xorg 
-xorg-xinit 
-bspwm-rounded-corners 
-networkmanager 
-iw 
-wpa_supplicant 
-dialog 
-sxhkd 
-tint2 
-polybar-git 
-alacritty\
-brillo 
-xwallpaper 
-maim 
-imagemagick 
-dmenu 
-arandr 
-picom-git 
-cava 
-kitty 
-ranger
+```bash 
+yay -S xorg xorg-xinit bspwm-rounded-corners networkmanager iw wpa_supplicant dialog sxhkd tint2 polybar-git alacritty brillo xwallpaper maim imagemagick dmenu arandr picom-git cava kitty ranger
+```
 </details>
 
 <details>
